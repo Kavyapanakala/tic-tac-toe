@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #00ffe0;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  width: 80%;
+  max-width: 900px;
+}
+
+.icon-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.icon-card img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.icon-card p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.icon-card:hover {
+  transform: perspective(600px) rotateX(10deg) rotateY(10deg) scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 255, 200, 0.6);
+}
+
+.icon-card:hover img {
+  transform: scale(1.2);
+}
